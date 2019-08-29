@@ -18,4 +18,14 @@ class UserController extends Controller
         }
         return view ('users.register');
     }
+
+    public function checkEmail(Request $request){
+        $data = $request->all();
+        $userCount = User::where('email', $data['email'])->count();
+        if($userCount > 0){
+            return false;
+        } else {
+            return  true;
+        }
+    }
 }

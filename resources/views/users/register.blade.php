@@ -10,20 +10,28 @@
             <div> <br />
                 <h6 class="inner">Register Here:</h6>
                 <br />
-                <form action="{{route('user_register')}}" method="post">
+                <form action="{{route('user_register')}}" method="post" id="signupForm">
                     @csrf
                     <table width="80%">
                         <tr>
-                            <td align="left" valign="top" class="body" id="Contact"><strong> Name:</strong></td>
-                            <td align="left" valign="top"><input name="name" type="text" size="40" /></td>
+                            <td align="left" valign="top" class="body" ><strong> Name:</strong></td>
+                            <td align="left" valign="top"><input name="name" id="name" type="text" size="22" /></td>
                         </tr>
                         <tr>
-                            <td align="left" valign="top" class="body" id="Email"><strong> Email: </strong></td>
-                            <td align="left" valign="top"><input name="email" type="email" size="40" /></td>
+                            <td align="left" valign="top" class="body" ><strong> Email: </strong></td>
+                            <td align="left" valign="top"><input name="email" id="email" type="email" size="22" /></td>
                         </tr>
                         <tr>
-                            <td align="left" valign="top" class="body" id="Email"><strong> Password: </strong></td>
-                            <td align="left" valign="top"><input name="password" type="password" size="40" /></td>
+                            <td align="left" valign="top" class="body"><strong> Password: </strong></td>
+                            <td align="left" valign="top"><input name="password" id="password" type="password" size="22" /></td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top" class="body"><strong> Confirm Password: </strong></td>
+                            <td align="left" valign="top"><input name="confirm_password" id="confirm_password" type="password" size="22" /></td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top" class="body" ><strong> Please agree to our Policy:</strong></td>
+                            <td align="left" valign="top"><input type="checkbox" class="checkbox" id="agree" name="agree" id="agree" size="22"></td>
                         </tr>
                         <tr>
                             <td></td>
