@@ -13,6 +13,8 @@
 
 Route::get('/', 'IndexController@index')->name('fe.index');
 
+Route::any('/user-register', 'UserController@register')->name('user_register');
+
 Route::match(['get', 'post'], '/admin', 'AdminController@login');
 
 Route::group(['middleware' => ['auth']], function (){

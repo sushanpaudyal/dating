@@ -28,7 +28,7 @@
     @endif
     <form action="{{ url('admin') }}"  method="post" id="loginform" class="form-vertical" action="javascript:">
         @csrf
-        <div class="control-group normal_text"> <h3><img src="{{asset('images/backend_images/logo.png')}}" alt="Logo" /></h3></div>
+        <div class="control-group normal_text"> <h3>Dating Admin Panel</h3></div>
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
