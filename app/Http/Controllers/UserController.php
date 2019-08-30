@@ -10,6 +10,11 @@ class UserController extends Controller
     public function register(Request $request){
         if($request->isMethod('post')){
             $data = $request->all();
+
+            $this->validate($request, [
+                'g-recaptcha-response' => 'required|captcha',
+            ]);
+
             $user = new User;
             $user->name = $data['name'];
             $user->email = $data['email'];
@@ -23,9 +28,9 @@ class UserController extends Controller
         $data = $request->all();
         $userCount = User::where('email', $data['email'])->count();
         if($userCount > 0){
-            return false;
+            echo 'false';
         } else {
-            return  true;
+            echo 'true';
         }
     }
 }

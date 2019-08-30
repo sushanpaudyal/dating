@@ -33,10 +33,23 @@
                             <td align="left" valign="top" class="body" ><strong> Please agree to our Policy:</strong></td>
                             <td align="left" valign="top"><input type="checkbox" class="checkbox" id="agree" name="agree" id="agree" size="22"></td>
                         </tr>
+
+                        <tr>
+                            <td align="left" valign="top" class="body" ><strong> Captcha</strong></td>
+                            <td align="left" valign="top">{!! app('captcha')->display() !!}</td>
+                            @if ($errors->has('g-recaptcha-response'))
+                                <span class="help-block">
+                                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                    </span>
+                            @endif
+                        </tr>
+
                         <tr>
                             <td></td>
                             <td><input type="submit" class="button" value="Register Now" /></td>
                         </tr>
+
+
                     </table>
                 </form>
             </div>
