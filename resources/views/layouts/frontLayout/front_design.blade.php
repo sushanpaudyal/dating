@@ -5,11 +5,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="csrf_token" content="{{csrf_token()}}">
     <link rel="stylesheet" href="{{asset('css/frontend_css/layout.css')}}">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
     <script src="{{asset('js/frontend_js/jquery.js')}}"></script>
     <script src="{{asset('js/frontend_js/jquery-3.1.1.js')}}"></script>
     <script src="{{asset('js/frontend_js/jquery.validate.js')}}"></script>
     <script src="{{asset('js/frontend_js/additional-methods.js')}}"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="{{asset('js/frontend_js/main.js')}}"></script>
+
+
+    <script>
+        $(function() {
+            $( "#dob" ).datepicker({
+                maxDate : '0',
+                changeYear : true,
+                changeMonth: true,
+                yearRange: '1950:2019'
+            });
+
+        });
+    </script>
 
 
 

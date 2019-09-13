@@ -1,8 +1,9 @@
 <div id="left_container">
 
+    @if(empty(Auth::check()))
+
     <div class="partner_search">
         <h2>Member Login</h2>
-        @if(empty(Auth::check()))
         <div class="form_container">
             @if(Session::has('flash_message_error'))
                 <div class="alert alert-error alert-block">
@@ -41,12 +42,25 @@
                 </fieldset>
             </form>
         </div>
-            @else
-            <div class="form_container">
-                Welcome <?php echo Auth::user()->name ?> | <a href="{{route('user_logout')}}">Logout</a>
-            </div>
-            @endif
+
     </div>
+
+    @else
+        <div class="partner_search">
+            <h2>   Welcome <?php echo Auth::user()->name ?>
+            </h2>
+            <div class="form_container">
+                <div class="link_detail">
+                    <p class="link">
+                        <a href="{{route('step2')}}">Add Dating Profile</a>
+                    </p>
+                    <p class="link">
+                        <a href="{{route('user_logout')}}">Logout</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    @endif
 
     <div class="partner_search">
         <h2>partner search</h2>

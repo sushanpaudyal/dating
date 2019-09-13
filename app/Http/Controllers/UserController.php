@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\UsersDetail;
 use Illuminate\Http\Request;
 use Auth;
 use Session;
@@ -49,7 +50,17 @@ class UserController extends Controller
         }
     }
 
-    public function step2(){
+    public function step2(Request $request){
+        if($request->isMethod('post')){
+            $data = $request->all();
+            $userDetail = new UsersDetail;
+            $userDetail->dob = $data['dob'];
+            $userDetail->gender = $data['gender'];
+            $userDetail->height = $data['height'];
+            $userDetail->maritial_status = $data['maritial_status'];
+            $userDetail->user_id = Auth::user()->id;
+            $userDetail->save();
+        }
         return view ('users.step2');
     }
 
