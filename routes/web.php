@@ -13,7 +13,7 @@
 
 Route::get('/', 'IndexController@index')->name('fe.index');
 
-Route::any('/user-register', 'UserController@register')->name('user_register');
+Route::any('/register', 'UserController@register')->name('user_register');
 
 Route::any('/check-email', 'UserController@checkEmail');
 
@@ -26,7 +26,6 @@ Route::group(['middleware' => ['auth']], function (){
     Route::match(['get', 'post'], '/admin/update-pwd', 'AdminController@updatePassword');
 });
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
