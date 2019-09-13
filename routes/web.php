@@ -17,6 +17,14 @@ Route::any('/register', 'UserController@register')->name('user_register');
 
 Route::any('/check-email', 'UserController@checkEmail');
 
+Route::any('/user_login', 'UserController@login')->name('user_login');
+
+Route::any('/step/2', 'UserController@step2')->name('step2');
+
+Route::get('/user/logout', 'UserController@logout')->name('user_logout');
+
+
+
 Route::match(['get', 'post'], '/admin', 'AdminController@login');
 
 Route::group(['middleware' => ['auth']], function (){

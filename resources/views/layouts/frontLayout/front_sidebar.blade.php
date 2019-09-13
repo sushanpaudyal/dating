@@ -1,4 +1,53 @@
 <div id="left_container">
+
+    <div class="partner_search">
+        <h2>Member Login</h2>
+        @if(empty(Auth::check()))
+        <div class="form_container">
+            @if(Session::has('flash_message_error'))
+                <div class="alert alert-error alert-block">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <strong>{!! session('flash_message_error') !!}</strong>
+                    </button>
+                </div>
+                @endif
+            <form action="{{ route('user_login') }}" method="post">
+                @csrf
+                <fieldset>
+                    <div class="search_row">
+                        <div class="search_column_1">
+                            <label>username</label>
+                        </div>
+                        <div class="search_column_2">
+                            <input type="email" id="email" name="email" placeholder="username">
+                        </div>
+                    </div>
+                    <div class="search_row">
+                        <div class="search_column_1">
+                            <label>password</label>
+                        </div>
+                        <div class="search_column_2">
+                            <input type="password" id="password" name="password" placeholder="password" >
+                        </div>
+                    </div>
+
+
+                    <div class="search_row last">
+                        <div class="search_column_1">&nbsp;</div>
+                        <div class="search_column_2">
+                            <input type="submit" value="Login" style="background-color: #532D1A; color: #fff; width: 70px; border: none; padding: 5px">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+            @else
+            <div class="form_container">
+                Welcome <?php echo Auth::user()->name ?> | <a href="{{route('user_logout')}}">Logout</a>
+            </div>
+            @endif
+    </div>
+
     <div class="partner_search">
         <h2>partner search</h2>
         <div class="form_container">
