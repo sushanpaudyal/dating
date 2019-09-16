@@ -61,6 +61,30 @@ class UserController extends Controller
             $userDetail->gender = $data['gender'];
             $userDetail->height = $data['height'];
             $userDetail->maritial_status = $data['maritial_status'];
+
+            $userDetail->body_type = $data['body_type'];
+            $userDetail->city = $data['city'];
+            $userDetail->state = $data['state'];
+            $userDetail->country = $data['country'];
+            $userDetail->education = $data['education'];
+            $userDetail->occupation = $data['occupation'];
+            $userDetail->income = $data['income'];
+            $userDetail->about_myself = $data['about_myself'];
+            $userDetail->about_partner = $data['about_partner'];
+
+            $hobbies = "";
+            foreach ($data['hobbies'] as $hobby){
+                $hobbies .= $hobby . ', ';
+            }
+            $userDetail->hobbies = $hobbies;
+
+
+            $languages = "";
+            foreach ($data['languages'] as $language){
+                $languages .= $language . ', ';
+            }
+            $userDetail->languages = $languages;
+
             $userDetail->user_id = Auth::user()->id;
             $userDetail->save();
         }

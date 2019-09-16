@@ -115,7 +115,7 @@
                             <tr>
                                 <td align="left" valign="top" class="body" ><strong> Language:</strong></td>
                                 <td align="left" valign="top">
-                                    <select name="language[]" id="language" multiple style="width: 208px; font-size: 14px; ">
+                                    <select name="languages[]" id="language" multiple style="width: 208px; font-size: 14px; ">
                                         <option >Select</option>
                                         @foreach($languages as $language)
                                             <option value="{{$language->name}}">{{$language->name}}</option>
@@ -127,7 +127,7 @@
                             <tr>
                                 <td align="left" valign="top" class="body" ><strong> Hobbies:</strong></td>
                                 <td align="left" valign="top">
-                                    <select name="hobby[]" id="hobby" multiple style="width: 208px; font-size: 14px; ">
+                                    <select name="hobbies[]" id="hobby" multiple style="width: 208px; font-size: 14px; ">
                                         <option >Select</option>
                                         @foreach($hobbies as $hobby)
                                             <option value="{{$hobby->title}}">{{$hobby->title}}</option>
