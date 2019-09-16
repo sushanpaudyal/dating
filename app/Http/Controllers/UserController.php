@@ -140,4 +140,12 @@ class UserController extends Controller
         Session::forget('frontSession');
         return redirect()->action('IndexController@index');
     }
+
+
+
+    public function viewUsers(){
+        $users = User::with('details')->where('admin', '!=', 1)->get();
+//        $users = json_decode(json_encode($users), true);
+        return view ('admin.users.view_users', compact('users'));
+    }
 }
