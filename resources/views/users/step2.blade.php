@@ -8,7 +8,7 @@
                     Add Dating Profile for free by filling out the form below
                 </strong>
                 <div> <br />
-                    <h6 class="inner">Add Dating Profile :</h6>
+                    <h6 class="inner">Personal Information:</h6>
                     <br />
 
 
@@ -50,7 +50,7 @@
                                 <td align="left" valign="top" class="body" ><strong> Marital Status:</strong></td>
                                 <td align="left" valign="top">
                                     <select name="maritial_status" id="maritial_status" style="width: 143px;">
-                                        <option>Select</option>
+                                        <option>Select maritial status</option>
                                         <option value="Unmarried"> Unmarried </option>
                                         <option value="Married"> Married </option>
                                         <option value="Divorced">Divorced</option>
@@ -58,6 +58,68 @@
                                         <option value="Separated">Separated</option>
                                         <option value="Annulled">Annulled</option>
                                         <option value="Other">Other</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left" valign="top" class="body" ><strong> Body Type:</strong></td>
+                                <td align="left" valign="top">
+                                    <select name="body_type" id="body_type" style="width: 143px;">
+                                        <option>Select body type</option>
+                                        <option value="Slim"> Slim </option>
+                                        <option value="Average"> Average </option>
+                                        <option value="Athletic"> Athletic </option>
+                                        <option value="heavy"> Heavy </option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left" valign="top" class="body" ><strong> Complexion:</strong></td>
+                                <td align="left" valign="top">
+                                    <select name="body_type" id="body_type" style="width: 143px;">
+                                        <option >Select</option>
+                                        <option value="Very Fair">Very Fair</option>
+                                        <option value="Fair">Fair</option>
+                                        <option value="Wheatish">Wheatish</option>
+                                        <option value="Dark">Dark</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td align="left" valign="top" class="body" ><strong> City:</strong></td>
+                                <td align="left" valign="top"><input autocomplete="off" name="city" id="city" type="text" size="22" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="left" valign="top" class="body" ><strong> State:</strong></td>
+                                <td align="left" valign="top"><input autocomplete="off" name="state" id="state" type="text" size="22" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="left" valign="top" class="body" ><strong> Country:</strong></td>
+                                <td align="left" valign="top">
+                                    <select name="country" id="country" style="width: 143px;">
+                                        <option >Select</option>
+                                        @foreach($countries as $country)
+                                        <option value="{{$country->country_name}}">{{$country->country_name}}</option>
+                                            @endforeach
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="left" valign="top" class="body" ><strong> Language:</strong></td>
+                                <td align="left" valign="top">
+                                    <select name="language" id="language" multiple style="width: 143px;">
+                                        <option >Select</option>
+                                        @foreach($languages as $language)
+                                            <option value="{{$language->name}}">{{$language->name}}</option>
+                                        @endforeach
                                     </select>
                                 </td>
                             </tr>

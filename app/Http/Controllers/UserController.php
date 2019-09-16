@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Country;
+use App\Language;
 use App\User;
 use App\UsersDetail;
 use Illuminate\Http\Request;
@@ -61,7 +63,9 @@ class UserController extends Controller
             $userDetail->user_id = Auth::user()->id;
             $userDetail->save();
         }
-        return view ('users.step2');
+        $countries = Country::all();
+        $languages = Language::all();
+        return view ('users.step2', compact('countries','languages'));
     }
 
     public function logout(){
