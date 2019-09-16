@@ -39,6 +39,13 @@
                             <input type="submit" value="Login" style="background-color: #532D1A; color: #fff; width: 70px; border: none; padding: 5px">
                         </div>
                     </div>
+
+                    <div class="search_row last">
+                        <div class="search_column_1">&nbsp;</div>
+                        <div class="search_column_2">
+                            <h3><a href="{{route('user_register')}}">New User Register</a></h3>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
         </div>

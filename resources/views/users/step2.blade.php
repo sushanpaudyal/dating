@@ -12,7 +12,7 @@
                     <br />
 
 
-                    <form action="{{route('step2')}}" method="post">
+                    <form action="{{route('step2')}}" method="post" id="datingForm">
 
 
 
@@ -20,14 +20,14 @@
                         <table width="80%" cellpadding="10" cellspacing="10">
                             <tr>
                                 <td align="left" valign="top" class="body" ><strong> DOB:</strong></td>
-                                <td align="left" valign="top"><input autocomplete="off" name="dob" id="dob" type="text" size="22" style="width: 208px; font-size: 14px;" /></td>
+                                <td align="left" valign="top"><input autocomplete="off" name="dob" id="dob" type="text" size="22" style="width: 208px; font-size: 14px;" required /></td>
                             </tr>
 
 
                             <tr>
                                 <td align="left" valign="top" class="body" ><strong> Gender:</strong></td>
                                 <td align="left" valign="top">
-                                    <select name="gender" id="gender" style="width: 208px; font-size: 14px; ">
+                                    <select name="gender" id="gender" style="width: 208px; font-size: 14px; " required>
                                         <option>Select</option>
                                         <option value="Male"> Male </option>
                                         <option value="Female"> Female </option>

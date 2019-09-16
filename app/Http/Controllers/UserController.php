@@ -27,6 +27,11 @@ class UserController extends Controller
             $user->password = bcrypt($data['password']);
             $user->admin = 0;
             $user->save();
+
+            if(Auth::attempt(['email' => $data['email'], 'password' => $data['password'], 'admin' => '0'])){
+                Session::put('frontSession', $data['email']);
+                return redirect('/step/2');
+            }
         }
         return view ('users.register');
     }
@@ -69,9 +74,25 @@ class UserController extends Controller
             $userDetail->height = $data['height'];
             $userDetail->maritial_status = $data['maritial_status'];
 
-            $userDetail->body_type = $data['body_type'];
-            $userDetail->city = $data['city'];
-            $userDetail->state = $data['state'];
+            if(empty($data['body_type'])){
+                $userDetail->body_type = "";
+            } else {
+                $userDetail->body_type = $data['body_type'];
+
+            }
+
+            if(empty($data['city'])){
+                $userDetail->city = "";
+            } else {
+                $userDetail->city = $data['city'];
+            }
+
+            if(empty($data['state'])){
+                $userDetail->state = "";
+            } else {
+                $userDetail->state = $data['state'];
+            }
+
             $userDetail->country = $data['country'];
             $userDetail->education = $data['education'];
             $userDetail->occupation = $data['occupation'];
@@ -80,17 +101,24 @@ class UserController extends Controller
             $userDetail->about_partner = $data['about_partner'];
 
             $hobbies = "";
-            foreach ($data['hobbies'] as $hobby){
-                $hobbies .= $hobby . ', ';
+            if(!empty($data['hobbies'])){
+                foreach ($data['hobbies'] as $hobby){
+                    $hobbies .= $hobby . ', ';
+                }
             }
             $userDetail->hobbies = $hobbies;
 
-
             $languages = "";
-            foreach ($data['languages'] as $language){
-                $languages .= $language . ', ';
+
+            if(!empty($data['languages'])){
+                foreach ($data['languages'] as $language){
+                    $languages .= $language . ', ';
+                }
             }
             $userDetail->languages = $languages;
+
+
+
 
             $userDetail->user_id = Auth::user()->id;
             $userDetail->save();

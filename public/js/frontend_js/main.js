@@ -55,6 +55,58 @@ $().ready(function() {
     });
 
 
+    // validate signup form on keyup and submit
+    $("#datingForm").validate({
+        rules: {
+            dob: {
+                required: true,
+            },
+            gender: {
+                required: true,
+            },
+            height: {
+                required: true,
+            },
+            maritial_status :{
+                required: true,
+            },
+            about_myself :{
+                required: true,
+                minlength: 20
+            },
+            about_partner :{
+                required: true,
+                minlength:  20
+            }
+
+
+
+        },
+        messages: {
+            dob: {
+                required: "Please select a date",
+            },
+            gender: {
+                required: "Please choose a gender",
+            },
+            height: {
+                required: "Please choose a height",
+            },
+            maritial_status: {
+                required: "Please enter a maritial_status",
+            },
+            about_myself: {
+                required: "Please enter a about",
+            },
+            about_partner: {
+                required: "Please enter a partner",
+            },
+
+
+        }
+    });
+
+
 
     // Password Check Script
 
