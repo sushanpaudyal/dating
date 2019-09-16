@@ -25,6 +25,8 @@ class AddColumnsToUsersDetails extends Migration
             $table->string('income')->after('occupation');
             $table->string('about_myself')->after('income');
             $table->string('about_partner')->after('about_myself');
+            $table->boolean('status')->after('about_partner')->default(0);
+
         });
     }
 

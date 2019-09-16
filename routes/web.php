@@ -21,6 +21,8 @@ Route::any('/user_login', 'UserController@login')->name('user_login');
 
 Route::any('/step/2', 'UserController@step2')->name('step2');
 
+Route::get('/review', 'UserController@review')->name('review');
+
 Route::get('/user/logout', 'UserController@logout')->name('user_logout');
 
 

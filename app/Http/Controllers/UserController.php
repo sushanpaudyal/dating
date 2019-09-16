@@ -54,6 +54,13 @@ class UserController extends Controller
     }
 
     public function step2(Request $request){
+
+        // Check if dating profile already exists and under review
+        $userProfileCount = UsersDetail::where(['user_id'=> Auth::user()->id, 'status' => 0])->count();
+        if($userProfileCount > 0){
+            return redirect('/review');
+        }
+
         if($request->isMethod('post')){
             $data = $request->all();
             $userDetail = new UsersDetail;
@@ -87,11 +94,17 @@ class UserController extends Controller
 
             $userDetail->user_id = Auth::user()->id;
             $userDetail->save();
+
+            return redirect('/review');
         }
         $countries = Country::all();
         $languages = Language::all();
         $hobbies = Hobby::all();
         return view ('users.step2', compact('countries','languages', 'hobbies'));
+    }
+
+    public function review(){
+        return view ('users.review');
     }
 
     public function logout(){
