@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Country;
+use App\Hobby;
 use App\Language;
 use App\User;
 use App\UsersDetail;
@@ -65,7 +66,8 @@ class UserController extends Controller
         }
         $countries = Country::all();
         $languages = Language::all();
-        return view ('users.step2', compact('countries','languages'));
+        $hobbies = Hobby::all();
+        return view ('users.step2', compact('countries','languages', 'hobbies'));
     }
 
     public function logout(){
