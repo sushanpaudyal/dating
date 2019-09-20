@@ -3,6 +3,7 @@
 <head>
     <title>Matrix Admin</title>
     <meta charset="UTF-8" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{asset('css/backend_css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/backend_css/bootstrap-responsive.min.css')}}" />
@@ -17,7 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 </head>
+
 <body>
 
 @include('layouts.adminLayout.admin_header')
@@ -42,6 +46,8 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js">
 </script>
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <script src="{{asset('js/backend_js/select2.min.js')}}"></script>
 <script src="{{asset('js/backend_js/jquery.dataTables.min.js')}}"></script>
 <script src="{{asset('js/backend_js/jquery.validate.js')}}"></script>

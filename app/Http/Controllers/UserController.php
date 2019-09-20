@@ -148,4 +148,9 @@ class UserController extends Controller
 //        $users = json_decode(json_encode($users), true);
         return view ('admin.users.view_users', compact('users'));
     }
+
+    public function updateUserStatus(Request $request){
+        $data = $request->all();
+        UsersDetail::where('user_id', $data['user_id'])->update(['status' => $data['status']]);
+    }
 }

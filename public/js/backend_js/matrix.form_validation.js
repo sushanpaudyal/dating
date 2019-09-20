@@ -20,6 +20,44 @@ $(document).ready(function(){
             }
 		})
     });
+
+
+	// Enable Disable User
+	$(".userStatus").change(function () {
+		var user_id = $(this).attr('rel');
+		if($(this).prop("checked") == true){
+			// alert("test1");
+			$.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+				type: 'post',
+				url: '/admin/update-user-status',
+				data: {status: '1', user_id: user_id},
+				success: function (resp) {
+                }, error: function () {
+					alert("Error");
+                }
+			});
+		} else {
+            // alert("test2");
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                type: 'post',
+                url: '/admin/update-user-status',
+                data: {status: '0', user_id: user_id},
+                success: function (resp) {
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+		}
+    });
+
+
+
 	
 	$('input[type=checkbox],input[type=radio],input[type=file]').uniform();
 	

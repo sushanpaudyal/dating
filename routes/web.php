@@ -37,6 +37,8 @@ Route::group(['middleware' => ['auth']], function (){
 
     // User
     Route::get('/admin/view-users', 'UserController@viewUsers')->name('viewUsers');
+
+    Route::post('/admin/update-user-status', 'UserController@updateUserStatus');
 });
 
 
