@@ -19,12 +19,14 @@ Route::any('/check-email', 'UserController@checkEmail');
 
 Route::any('/user_login', 'UserController@login')->name('user_login');
 
-Route::any('/step/2', 'UserController@step2')->name('step2');
 
-Route::get('/review', 'UserController@review')->name('review');
 
 Route::get('/user/logout', 'UserController@logout')->name('user_logout');
 
+Route::group(['middleware' => ['frontLogin']], function () {
+    Route::any('/step/2', 'UserController@step2')->name('step2');
+    Route::get('/review', 'UserController@review')->name('review');
+});
 
 
 Route::match(['get', 'post'], '/admin', 'AdminController@login');

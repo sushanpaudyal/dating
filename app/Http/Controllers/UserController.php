@@ -142,7 +142,13 @@ class UserController extends Controller
     }
 
     public function review(){
-        return view ('users.review');
+        $user_id = Auth::user()->id;
+        $userStatus = UsersDetail::select('status')->where('user_id', $user_id)->first();
+        if($userStatus->status == 1){
+            return redirect()->route('step2');
+        } else {
+            return view ('users.review');
+        }
     }
 
     public function logout(){
