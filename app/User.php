@@ -47,7 +47,7 @@ class User extends Authenticatable
     }
 
     public static function datingProfileDetails($user_id){
-        $datingProfile = UsersDetail::where('id', $user_id)->first();
+        $datingProfile = UsersDetail::where('user_id', $user_id)->first();
         return $datingProfile;
     }
 }

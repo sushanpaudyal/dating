@@ -68,7 +68,17 @@ class UserController extends Controller
 
         if($request->isMethod('post')){
             $data = $request->all();
-            $userDetail = new UsersDetail;
+
+            if(empty($data['user_id'])){
+                $userDetail = new UsersDetail;
+                $userDetail->user_id = Auth::user()->id;
+            } else {
+                $userDetail = UsersDetail::where('user_id', $data['user_id'])->first();
+                $userDetail->status = 0;
+            }
+
+
+
             $userDetail->dob = $data['dob'];
             $userDetail->gender = $data['gender'];
             $userDetail->height = $data['height'];
@@ -120,7 +130,7 @@ class UserController extends Controller
 
 
 
-            $userDetail->user_id = Auth::user()->id;
+
             $userDetail->save();
 
             return redirect('/review');
