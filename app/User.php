@@ -40,4 +40,14 @@ class User extends Authenticatable
     public function details(){
         return $this->hasOne(UsersDetail::class, 'user_id');
     }
+
+    public static function datingProfileExists($user_id){
+        $datingCount = UsersDetail::select('user_id', 'status')->where(['user_id' => $user_id, 'status' => 1])->count();
+        return $datingCount;
+    }
+
+    public static function datingProfileDetails($user_id){
+        $datingProfile = UsersDetail::where('id', $user_id)->first();
+        return $datingProfile;
+    }
 }

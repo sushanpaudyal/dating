@@ -1,3 +1,12 @@
+<?php
+use App\User;
+$datingCount = User::datingProfileExists(Auth::user()['id']);
+if($datingCount == 1){
+    $datingCountText = "My Dating Profile";
+} else {
+    $datingCountText = "Add Dating Profile";
+}
+?>
 <div id="left_container">
 
     @if(empty(Auth::check()))
@@ -59,7 +68,7 @@
             <div class="form_container">
                 <div class="link_detail">
                     <p class="link">
-                        <a href="{{route('step2')}}">Add Dating Profile</a>
+                        <a href="{{route('step2')}}">{{$datingCountText}}</a>
                     </p>
                     <p class="link">
                         <a href="{{route('user_logout')}}">Logout</a>

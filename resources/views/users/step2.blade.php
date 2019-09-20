@@ -1,11 +1,27 @@
+<?php
+use App\User;
+$datingCount = User::datingProfileExists(Auth::user()['id']);
+if($datingCount == 1){
+    $datingCountText = "My Dating Profile";
+    $datingCountText2 = "Update Dating Profile for free by filling out the form below";
+
+} else {
+    $datingCountText = "Add Dating Profile";
+    $datingCountText2 = "Add Dating Profile for free by filling out the form below";
+
+}
+
+$datingProfile = User::datingProfileDetails(Auth::user()['id']); ?>
+?>
+
 @extends('layouts.frontLayout.front_design')
 
 @section('content')
     <div id="right_container">
         <div style="padding:20px 15px 30px 15px;">
-            <h1>Add Dating Profile</h1>
+            <h1>{{$datingCountText}}</h1>
             <div> <strong> <br />
-                    Add Dating Profile for free by filling out the form below
+                    {{$datingCountText2}}
                 </strong>
                 <div> <br />
                     <h6 class="inner">Personal Information:</h6>
@@ -20,7 +36,7 @@
                         <table width="80%" cellpadding="10" cellspacing="10">
                             <tr>
                                 <td align="left" valign="top" class="body" ><strong> DOB:</strong></td>
-                                <td align="left" valign="top"><input autocomplete="off" name="dob" id="dob" type="text" size="22" style="width: 208px; font-size: 14px;" required /></td>
+                                <td align="left" valign="top"><input @if(!empty($datingProfile['dob'])) value="{{$datingProfile['dob']}}"  @endif autocomplete="off" name="dob" id="dob" type="text" size="22" style="width: 208px; font-size: 14px;" required /></td>
                             </tr>
 
 
@@ -29,8 +45,8 @@
                                 <td align="left" valign="top">
                                     <select name="gender" id="gender" style="width: 208px; font-size: 14px; " required>
                                         <option>Select</option>
-                                        <option value="Male"> Male </option>
-                                        <option value="Female"> Female </option>
+                                        <option value="Male" @if(!empty($datingProfile['gender'])) @if($datingProfile->gender == "Male") selected @endif @endif> Male </option>
+                                        <option value="Female" @if(!empty($datingProfile['gender'])) @if($datingProfile->gender == "Female") selected @endif @endif> Female </option>
                                     </select>
                                 </td>
                             </tr>
@@ -40,8 +56,8 @@
                                 <td align="left" valign="top">
                                     <select name="height" id="height" style="width: 208px; font-size: 14px; ">
                                         <option>Feet/Inches</option>
-                                        <option value="4' 0'"> 4'0"" </option>
-                                        <option value="4' 1'"> 4' 1"" </option>
+                                        <option value="4'0'" @if(!empty($datingProfile['height'])) @if($datingProfile->height == "4'0'") selected @endif @endif> 4'0"" </option>
+                                        <option value="4'1'" @if(!empty($datingProfile['height'])) @if($datingProfile->height == "4'1'") selected @endif @endif> 4' 1"" </option>
                                     </select>
                                 </td>
                             </tr>
