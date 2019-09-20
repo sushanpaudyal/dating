@@ -70,6 +70,11 @@ if($datingCount == 1){
                     <p class="link">
                         <a href="{{route('step2')}}">{{$datingCountText}}</a>
                     </p>
+                    @if($datingCount == 1)
+                    <p class="link">
+                        <a href="{{route('step3')}}">My Photos</a>
+                    </p>
+                    @endif
                     <p class="link">
                         <a href="{{route('user_logout')}}">Logout</a>
                     </p>

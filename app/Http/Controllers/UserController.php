@@ -141,6 +141,13 @@ class UserController extends Controller
         return view ('users.step2', compact('countries','languages', 'hobbies'));
     }
 
+    public function step3(Request $request){
+        if($request->isMethod('post')){
+            $data = $request->all();
+        }
+        return view ('users.step3');
+    }
+
     public function review(){
         $user_id = Auth::user()->id;
         $userStatus = UsersDetail::select('status')->where('user_id', $user_id)->first();

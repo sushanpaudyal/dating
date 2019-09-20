@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f192b34-9605-4b6b-8341-121afe18486a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Frontlogin.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Frontlogin.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,35 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Frontlogin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Frontlogin.php">
+      <file leaf-file-name="2019_09_20_171948_create_users_photos_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_20_171948_create_users_photos_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-              <folding>
-                <element signature="e#39#51#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="149" column="41" lean-forward="false" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
-              <folding>
-                <element signature="e#40#56#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+            <state relative-caret-position="425">
+              <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -56,9 +32,65 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="62" />
+            <state relative-caret-position="326">
+              <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+              <folding>
+                <element signature="e#224#978#0#PHP" expanded="false" />
+                <element signature="e#984#1242#0#PHP" expanded="false" />
+                <element signature="e#1248#1735#0#PHP" expanded="false" />
+                <element signature="e#1741#4314#0#PHP" expanded="false" />
+                <element signature="e#4496#4808#0#PHP" expanded="false" />
+                <element signature="e#4814#4970#0#PHP" expanded="false" />
+                <element signature="e#4978#5209#0#PHP" expanded="false" />
+                <element signature="e#5215#5401#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="front_sidebar.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="76" column="26" lean-forward="false" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+              <folding>
+                <marker date="1569001133032" expanded="true" signature="243:263" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="382:417" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="592:624" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="741:762" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="2216:2238" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="2683:2697" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="2703:2719" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="2775:2792" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="2866:2880" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="3022:3042" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="5881:5927" ph="..." />
+                <marker date="1569001133032" expanded="true" signature="7549:7600" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step3.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/users/step3.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="14" column="112" lean-forward="false" selection-start-line="14" selection-start-column="112" selection-end-line="14" selection-end-column="112" />
+              <folding>
+                <marker date="1569000886319" expanded="true" signature="9:43" ph="..." />
+                <marker date="1569000886319" expanded="true" signature="55:64" ph="..." />
+                <marker date="1569000886319" expanded="true" signature="462:476" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,13 +146,15 @@
         <option value="$PROJECT_DIR$/resources/views/admin/users/view_users.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" />
         <option value="$PROJECT_DIR$/public/js/backend_js/matrix.form_validation.js" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/users/step2.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Frontlogin.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_20_171948_create_users_photos_table.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/step3.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" />
       </list>
     </option>
   </component>
@@ -270,13 +304,20 @@
             <path>
               <item name="dating" type="b2602c69:ProjectViewProjectNode" />
               <item name="dating" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="dating" type="b2602c69:ProjectViewProjectNode" />
               <item name="dating" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="dating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dating" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="users" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -288,7 +329,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="USer&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;web&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/routes/web.php&#10;Kerne&#9;null&#9;null&#10;Front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/Frontlogin.php&#10;User&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;step&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;User.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/User.php&#10;admin_de&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_header.blade.php&#10;veri&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/VerifyCsrfToken.php&#10;csrf&#9;null&#9;null&#10;cs&#9;null&#9;null&#10;Veri&#9;null&#9;null&#10;matr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/backend_js/matrix.form_validation.js&#10;admin_des&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;we&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/routes/web.php&#10;view&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/users/view_users.blade.php&#10;side&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_sidebar.blade.php&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;ste&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;front_si&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;fron&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_footer.blade.php&#10;step2&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;front_De&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_design.blade.php&#10;re&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;register&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/auth/register.blade.php&#10;reg&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;lay&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/css/frontend_css/layout.css&#10;sid&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;Inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/IndexController.php&#10;fr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;regis&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;main.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;.env&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/.env&#10;app.php&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/config/app.php&#10;ma&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;fro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_design.blade.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/admin_login.blade.php&#10;Index&#9;null&#9;null&#10;layout.cs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/css/frontend_css/layout.css&#10;Red&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/RedirectIfAuthenticated.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/resources/views/admin/admin_login.blade.php&#10;Admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/app/Http/Controllers/AdminController.php&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/resources/views/admin/settings.blade.php&#10;AdminCo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/app/Http/Controllers/AdminController.php&#10;matrix.form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/public/js/backend_js/matrix.form_validation.js&#10;admin_hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/resources/views/layouts/adminLayout/admin_header.blade.php&#10;Redirec&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="sideb&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;ste&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;step2&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;User&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;web&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/routes/web.php&#10;users_ph&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/database/migrations/2019_09_20_171948_create_users_photos_table.php&#10;USer&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;Kerne&#9;null&#9;null&#10;Front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/Frontlogin.php&#10;step&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;User.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/User.php&#10;admin_de&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_header.blade.php&#10;veri&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/VerifyCsrfToken.php&#10;csrf&#9;null&#9;null&#10;cs&#9;null&#9;null&#10;Veri&#9;null&#9;null&#10;matr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/backend_js/matrix.form_validation.js&#10;admin_des&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;we&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/routes/web.php&#10;view&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/users/view_users.blade.php&#10;side&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_sidebar.blade.php&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;front_si&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;fron&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_footer.blade.php&#10;front_De&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_design.blade.php&#10;re&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;register&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/auth/register.blade.php&#10;reg&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;lay&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/css/frontend_css/layout.css&#10;sid&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;Inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/IndexController.php&#10;fr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;regis&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;main.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;.env&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/.env&#10;app.php&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/config/app.php&#10;ma&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;fro&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_design.blade.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/admin_login.blade.php&#10;Index&#9;null&#9;null&#10;layout.cs&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/css/frontend_css/layout.css&#10;Red&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/RedirectIfAuthenticated.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/resources/views/admin/admin_login.blade.php&#10;Admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/app/Http/Controllers/AdminController.php&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/resources/views/admin/settings.blade.php&#10;AdminCo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/app/Http/Controllers/AdminController.php&#10;matrix.form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/ecommerce/public/js/backend_js/matrix.form_validation.js" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -334,12 +375,12 @@
       <workItem from="1568648982617" duration="8168000" />
       <workItem from="1568738533334" duration="1535000" />
       <workItem from="1568967846753" duration="3495000" />
-      <workItem from="1568992151406" duration="4834000" />
+      <workItem from="1568992151406" duration="6102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42237000" />
+    <option name="totallyTimeSpent" value="43505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -400,21 +441,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -690,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_16_164724_add_columns_to_users_details.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -710,7 +729,7 @@
         <state relative-caret-position="607">
           <caret line="49" column="50" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
           <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
+            <element signature="e#23#63#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -723,28 +742,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Frontlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="e#39#51#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/users/step2.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3585">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="36" selection-end-column="30" />
+        <state relative-caret-position="522">
+          <caret line="337" column="27" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="337" selection-end-column="27" />
           <folding>
-            <element signature="e#562#598#0#HTML" expanded="true" />
-            <element signature="e#1593#1631#0#HTML" expanded="true" />
-            <element signature="e#1958#1997#0#HTML" expanded="true" />
-            <element signature="e#2822#2861#0#HTML" expanded="true" />
-            <element signature="e#3705#3744#0#HTML" expanded="true" />
-            <element signature="e#5656#5695#0#HTML" expanded="true" />
-            <element signature="e#6996#7035#0#HTML" expanded="true" />
-            <element signature="e#7433#7472#0#HTML" expanded="true" />
-            <element signature="e#7792#7831#0#HTML" expanded="true" />
-            <element signature="e#8673#8712#0#HTML" expanded="true" />
-            <element signature="e#9559#9598#0#HTML" expanded="true" />
-            <element signature="e#10761#10800#0#HTML" expanded="true" />
-            <element signature="e#11129#11168#0#HTML" expanded="true" />
-            <element signature="e#22568#22573#0#HTML" expanded="true" />
-            <element signature="e#23489#23528#0#HTML" expanded="true" />
-            <element signature="e#25695#25747#0#HTML" expanded="true" />
-            <element signature="e#26537#26589#0#HTML" expanded="true" />
+            <element signature="e#887#27107#0#HTML" expanded="false" />
             <marker date="1568998283987" expanded="true" signature="461:495" ph="..." />
             <marker date="1568998283987" expanded="true" signature="507:516" ph="..." />
             <marker date="1568998283987" expanded="true" signature="618:634" ph="..." />
@@ -946,38 +967,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_20_171948_create_users_photos_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="425">
+          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Frontlogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="62" />
+        <state relative-caret-position="326">
+          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/step3.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="14" column="112" lean-forward="false" selection-start-line="14" selection-start-column="112" selection-end-line="14" selection-end-column="112" />
+          <folding>
+            <marker date="1569000886319" expanded="true" signature="9:43" ph="..." />
+            <marker date="1569000886319" expanded="true" signature="55:64" ph="..." />
+            <marker date="1569000886319" expanded="true" signature="462:476" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="149" column="41" lean-forward="false" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
+        <state relative-caret-position="204">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#224#978#0#PHP" expanded="false" />
+            <element signature="e#984#1242#0#PHP" expanded="false" />
+            <element signature="e#1248#1735#0#PHP" expanded="false" />
+            <element signature="e#1741#4314#0#PHP" expanded="false" />
+            <element signature="e#4496#4808#0#PHP" expanded="false" />
+            <element signature="e#4814#4970#0#PHP" expanded="false" />
+            <element signature="e#4978#5209#0#PHP" expanded="false" />
+            <element signature="e#5215#5401#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="76" column="26" lean-forward="false" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding>
+            <marker date="1569001133032" expanded="true" signature="243:263" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="382:417" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="592:624" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="741:762" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="2216:2238" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="2683:2697" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="2703:2719" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="2775:2792" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="2866:2880" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="3022:3042" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="5881:5927" ph="..." />
+            <marker date="1569001133032" expanded="true" signature="7549:7600" ph="..." />
           </folding>
         </state>
       </provider>
