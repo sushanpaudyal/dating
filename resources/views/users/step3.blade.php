@@ -70,7 +70,7 @@
                         @endif
                 </p>
                 <p>
-                    <a href="/delete-photo/{{$user_photo->photo}}" class="btn btn-danger btn-sm" type="button">Delete</a>
+                    <a rel="{{$user_photo->photo}}" rel1="delete-photo" href="javascript:" class="btn btn-danger btn-sm deleteRecord">Delete</a>
                 </p>
                 <p>&nbsp;</p>
 
