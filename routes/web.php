@@ -28,6 +28,8 @@ Route::group(['middleware' => ['frontLogin']], function () {
     Route::get('/review', 'UserController@review')->name('review');
 
     Route::any('/step/3','UserController@step3')->name('step3');
+
+    Route::get('/delete-photo/{photo}', 'UserController@deletePhoto')->name('deletePhoto');
 });
 
 

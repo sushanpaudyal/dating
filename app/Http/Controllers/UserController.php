@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Session;
 use Image;
+use File;
 
 
 class UserController extends Controller
@@ -199,5 +200,14 @@ class UserController extends Controller
     public function updateUserStatus(Request $request){
         $data = $request->all();
         UsersDetail::where('user_id', $data['user_id'])->update(['status' => $data['status']]);
+    }
+
+
+    public function deletePhoto($photo){
+        $user_id = Auth::user()->id;
+        UsersPhoto::where(['user_id' => $user_id, 'photo' => $photo])->delete();
+//        unlink('images/frontend_images/photos/'.$photo);
+        File::delete('images/frontend_images/photos/'.$photo);
+        return redirect()->back()->with('flash_message_success', 'Your Photos Has Been Deleted Successfully');
     }
 }

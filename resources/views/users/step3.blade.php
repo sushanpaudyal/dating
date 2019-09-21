@@ -69,7 +69,11 @@
                     InActive
                         @endif
                 </p>
+                <p>
+                    <a href="/delete-photo/{{$user_photo->photo}}" class="btn btn-danger btn-sm" type="button">Delete</a>
+                </p>
                 <p>&nbsp;</p>
+
             </div>
                 @endforeach
         </div>
