@@ -210,4 +210,9 @@ class UserController extends Controller
         File::delete('images/frontend_images/photos/'.$photo);
         return redirect()->back()->with('flash_message_success', 'Your Photos Has Been Deleted Successfully');
     }
+
+    public function updatePhotoStatus(Request $request){
+        $data = $request->all();
+        UsersPhoto::where('id', $data['photo_id'])->update(['status' => $data['status']]);
+    }
 }

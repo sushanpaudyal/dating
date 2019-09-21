@@ -56,10 +56,45 @@ $(document).ready(function(){
 		}
     });
 
+	// Enable Disable Photos
+    $(".userPhotoStatus").change(function () {
+        var photo_id = $(this).attr('rel');
+        if($(this).prop("checked") == true){
+            // alert("test1");
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                type: 'post',
+                url: '/admin/update-photo-status',
+                data: {status: '1', photo_id: photo_id},
+                success: function (resp) {
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        } else {
+            // alert("test2");
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                type: 'post',
+                url: '/admin/update-photo-status',
+                data: {status: '0', photo_id: photo_id},
+                success: function (resp) {
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        }
+    });
 
 
-	
-	$('input[type=checkbox],input[type=radio],input[type=file]').uniform();
+
+
+
+    $('input[type=checkbox],input[type=radio],input[type=file]').uniform();
 	
 	$('select').select2();
 	
