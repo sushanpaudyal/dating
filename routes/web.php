@@ -33,7 +33,7 @@ Route::group(['middleware' => ['frontLogin']], function () {
 });
 
 
-Route::match(['get', 'post'], '/admin', 'AdminController@login');
+Route::match(['get', 'post'], '/admin', 'AdminController@login')->name('login');
 
 Route::group(['middleware' => ['auth']], function (){
     Route::get('/admin/dashboard', 'AdminController@dashboard')->name('admin.dashboard');

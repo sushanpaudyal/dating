@@ -46,7 +46,7 @@
                                         <td>{{$user->email}}</td>
                                         <td>{{$user->created_at}}</td>
                                         <td>
-                                            @if(!empty($user['details']['id']))
+                                        @if(!empty($user['details']['id']))
                                             <a href="#myModal{{ $user['id'] }}" data-toggle="modal" class="btn btn-success btn-mini">View Details</a>
                                             <div id="myModal{{ $user['id'] }}" class="modal hide">
                                                 <div class="modal-header">
@@ -158,6 +158,34 @@
                                             </div>
                                             @endif
 
+
+                                            <a href="#myPhotos{{ $user['id'] }}" data-toggle="modal" class="btn btn-info btn-mini">View Photos</a>
+                                            <div id="myPhotos{{ $user['id'] }}" class="modal hide">
+                                                <div class="modal-header">
+                                                    <button data-dismiss="modal" class="close" type="button">×</button>
+                                                    <h3>User Photos</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <table width="100%" cellpadding="10" cellspacing="10">
+                                                        <tr>
+                                                            @foreach($user['photos'] as $photo)
+                                                                <td>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td width="40%" align="left" valign="top" class="body">
+                                                                                <img style="width:100px;" src="{{ url('images/frontend_images/photos/'.$photo['photo']) }}">
+                                                                            </td>
+                                                                            <td width="60%" align="left" valign="top">
+                                                                                <input class="userPhotoStatus" rel="{{ $photo['id'] }}" type="checkbox" data-toggle="toggle"  data-on="Enabled" data-off="Disabled" @if($photo['status']=="1") checked @endif>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            @endforeach
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
 
                                             <a href="" class="btn btn-primary btn-mini">Edit</a>
                                             <a rel="" rel1="delete-product" href="javascript:" class="btn btn-danger btn-mini deleteRecord">Delete</a>

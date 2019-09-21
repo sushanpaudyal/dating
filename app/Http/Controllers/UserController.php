@@ -192,7 +192,7 @@ class UserController extends Controller
 
 
     public function viewUsers(){
-        $users = User::with('details')->where('admin', '!=', 1)->get();
+        $users = User::with('details')->with('photos')->where('admin', '!=', 1)->get();
 //        $users = json_decode(json_encode($users), true);
         return view ('admin.users.view_users', compact('users'));
     }
