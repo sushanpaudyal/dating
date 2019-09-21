@@ -54,4 +54,24 @@
                 <div class="clear"></div>
             </div>
 
+        </div>
+
+        <div class="recent_add_prifile">
+            @foreach($user_photos as $user_photo)
+            <div class="profile_box first"> <span class="photo">
+                        <img src="{{asset('images/frontend_images/photos/'.$user_photo->photo)}}" alt="" />
+                </span>
+                <p class="left">Status:</p>
+                <p class="right">
+                    @if($user_photo->status == 1)
+                        Active
+                        @else
+                    InActive
+                        @endif
+                </p>
+                <p>&nbsp;</p>
+            </div>
+                @endforeach
+        </div>
+
 @endsection

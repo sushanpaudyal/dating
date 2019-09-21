@@ -166,7 +166,10 @@ class UserController extends Controller
             }
             return redirect('/step/3')->with('flash_message_success', 'Your Photos Has Been Added Successfully');
         }
-        return view ('users.step3');
+
+        $user_id = Auth::user()->id;
+        $user_photos = UsersPhoto::where('user_id', $user_id)->get();
+        return view ('users.step3', compact('user_photos'));
     }
 
     public function review(){
