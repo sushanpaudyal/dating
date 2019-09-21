@@ -7,9 +7,12 @@ use App\Hobby;
 use App\Language;
 use App\User;
 use App\UsersDetail;
+use App\UsersPhoto;
 use Illuminate\Http\Request;
 use Auth;
 use Session;
+use Image;
+
 
 class UserController extends Controller
 {
@@ -144,6 +147,24 @@ class UserController extends Controller
     public function step3(Request $request){
         if($request->isMethod('post')){
             $data = $request->all();
+            if($request->hasFile('photo')){
+                $files = $request->file('photo');
+                foreach($files as $file){
+                    // Upload photo at folder
+                    $extension = $file->getClientOriginalExtension();
+                    $fileName = rand(111,99999).'.'.$extension;
+                    $image_path = "images/frontend_images/photos/".$fileName;
+                    Image::make($file)->resize(600,600)->save($image_path);
+
+                    $photo = new UsersPhoto;
+                    $photo->photo = $fileName;
+                    $photo->user_id = $data['user_id'];
+                    $photo->default_photo = "No";
+                    $photo->status = 0;
+                    $photo->save();
+                }
+            }
+            return redirect('/step/3')->with('flash_message_success', 'Your Photos Has Been Added Successfully');
         }
         return view ('users.step3');
     }
