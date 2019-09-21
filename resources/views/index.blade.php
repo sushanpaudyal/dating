@@ -17,46 +17,22 @@
             </div>
         </div>
         <div class="recent_add_prifile">
-            <div class="profile_box first"> <span class="photo"><a href="#"><img src="{{asset('images/frontend_images/pic_1.gif')}}" alt="" /></a></span>
+            <?php $count = 1; ?>
+            @foreach($recent_users as $key =>  $user)
+                @if(!empty($user->details) && $user->details->status == 1)
+                    @if($count <= 4)
+            <div class="profile_box"> <span class="photo"><a href="#"><img src="{{asset('images/frontend_images/pic_1.gif')}}" alt="" /></a></span>
                 <p class="left">Name:</p>
-                <p class="right">Boris Bay</p>
-                <p class="left">Age:</p>
-                <p class="right">25 years</p>
+                <p class="right">{{$user->name}}</p>
                 <p class="left">Location:</p>
-                <p class="right">Canada</p>
-                <p class="left">Interest:</p>
-                <p class="right">Dating</p>
-                <a href="#"><img src="{{asset('images/frontend_images/more_btn.gif')}}" alt="" class="more_1" /></a> </div>
-            <div class="profile_box"> <span class="photo"><a href="#"><img src="{{asset('images/frontend_images/pic_2.gif')}}" alt="" /></a></span>
-                <p class="left">Name:</p>
-                <p class="right">Christina</p>
-                <p class="left">Age:</p>
-                <p class="right">21 years</p>
-                <p class="left">Location:</p>
-                <p class="right">South Korea</p>
-                <p class="left">Interest:</p>
-                <p class="right">Friendship</p>
-                <a href="#"><img src="{{asset('images/frontend_images/more_btn.gif')}}" alt="" class="more_1" /></a> </div>
-            <div class="profile_box"> <span class="photo"><a href="#"><img src="{{asset('images/frontend_images/pic_3.gif')}}" alt="" /></a></span>
-                <p class="left">Name:</p>
-                <p class="right">Manish</p>
-                <p class="left">Age:</p>
-                <p class="right">27 years</p>
-                <p class="left">Location:</p>
-                <p class="right">India</p>
-                <p class="left">Interest:</p>
-                <p class="right">Relationship</p>
-                <a href="#"><img src="{{asset('images/frontend_images/more_btn.gif')}}" alt="" class="more_1" /></a> </div>
-            <div class="profile_box"> <span class="photo"><a href="#"><img src="{{asset('images/frontend_images/pic_4.gif')}}" alt="" /></a></span>
-                <p class="left">Name:</p>
-                <p class="right">Tina Brown</p>
-                <p class="left">Age:</p>
-                <p class="right">23 years</p>
-                <p class="left">Location:</p>
-                <p class="right">Russia</p>
-                <p class="left">Interest:</p>
-                <p class="right">Flirting</p>
-                <a href="#"><img src="{{asset('images/frontend_images/more_btn.gif')}}" alt="" class="more_1" /></a> </div>
+                <p class="right">@if(!empty($user->details->city)) {{$user->details->city}} @endif</p>
+                <a href="#"><img src="{{asset('images/frontend_images/more_btn.gif')}}" alt="" class="more_1" /></a>
+            </div>
+                        <?php $count = $count + 1; ?>
+                        @endif
+                    @endif
+                @endforeach
+
         </div>
         <div class="expert_dating_tips">
             <h4>expert dating tips</h4>

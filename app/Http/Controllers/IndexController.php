@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
     public function index(){
-        return view ('index');
+        $recent_users = User::with('details')->with('photos')->orderBy('id', 'DESC')->limit(4)->get();
+        return view ('index', compact('recent_users'));
     }
 }
