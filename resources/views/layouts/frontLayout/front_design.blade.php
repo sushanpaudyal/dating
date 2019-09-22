@@ -31,6 +31,7 @@
     <script>
         $(function() {
             $( "#dob" ).datepicker({
+                dateFormat: 'yy-mm-dd',
                 maxDate : '0',
                 changeYear : true,
                 changeMonth: true,

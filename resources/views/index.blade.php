@@ -21,11 +21,30 @@
             @foreach($recent_users as $key =>  $user)
                 @if(!empty($user->details) && $user->details->status == 1)
                     @if($count <= 4)
-            <div class="profile_box"> <span class="photo"><a href="#"><img src="{{asset('images/frontend_images/pic_1.gif')}}" alt="" /></a></span>
+            <div class="profile_box">
+                @foreach($user->photos as $key => $photo)
+                    @if($photo->default_photo == "Yes")
+                        <?php $user_photo = $user->photos[$key]->photo; ?>
+                        @else
+                        <?php $user_photo = $user->photos[0]->photo; ?>
+                    @endif
+                @endforeach
+                @if(!empty($user_photo))
+                <span class="photo"><a href="#"><img src="{{asset('images/frontend_images/photos/'.$user_photo)}}" alt="" /></a></span>
+                    @endif
                 <p class="left">Name:</p>
                 <p class="right">{{$user->name}}</p>
+                <p class="left">Age:</p>
+                <p class="right">
+                    <?php
+                    $dob = $user->details->dob;
+                    echo $diff = date('Y') - date('Y', strtotime($dob));
+                    ?> Years
+
+                </p>
                 <p class="left">Location:</p>
                 <p class="right">@if(!empty($user->details->city)) {{$user->details->city}} @endif</p>
+
                 <a href="#"><img src="{{asset('images/frontend_images/more_btn.gif')}}" alt="" class="more_1" /></a>
             </div>
                         <?php $count = $count + 1; ?>
