@@ -37,7 +37,7 @@ if($datingCount == 1){
                             <label>password</label>
                         </div>
                         <div class="search_column_2">
-                            <input type="password" id="password" name="password" placeholder="password" required>
+                            <input type="password" id="password" name="password" placeholder="password" re>
                         </div>
                     </div>
 
@@ -90,54 +90,56 @@ if($datingCount == 1){
                 <fieldset>
                     <div class="search_row">
                         <div class="search_column_1">
-                            <label>I am a</label>
+                            <label>Looking for</label>
                         </div>
                         <div class="search_column_2">
                             <select class="gender">
                                 <option>Male</option>
-                            </select>
-                            <label class="seeking">Seeking a</label>
-                            <select class="gender">
-                                <option>Female</option>
+                                <option value="">Female</option>
                             </select>
                         </div>
                     </div>
                     <div class="search_row">
                         <div class="search_column_1">
-                            <label>Looking for a</label>
+                            <label>of Age</label>
                         </div>
                         <div class="search_column_2">
                             <select class="date">
-                                <option>Date</option>
+                                <?php
+                                    $minCount = 16;
+                                    while ($minCount <= 99){
+
+                                ?>
+                                <option value="{{$minCount}}">from {{$minCount}} yrs</option>
+                                <?php $minCount = $minCount + 1; } ?>
+                            </select>
+
+                            <select class="date">
+                                <?php
+                                $maxCount = 16;
+                                while ($maxCount <= 99){
+                                ?>
+                                    <option value="{{$maxCount}}" @if($maxCount == "32") selected @endif>to {{$maxCount}} yrs</option>
+                                <?php $maxCount = $maxCount + 1; } ?>
                             </select>
                         </div>
                     </div>
+
                     <div class="search_row">
                         <div class="search_column_1">
-                            <label>I was born</label>
+                            <label>Location</label>
                         </div>
                         <div class="search_column_2">
-                            <select class="dob">
-                                <option>Month</option>
-                            </select>
-                            <select class="dob">
-                                <option>Date</option>
-                            </select>
-                            <select class="dob">
-                                <option>Year</option>
+                            <?php $getCountries = \App\Country::get(); ?>
+                            <select class="gender" name="location">
+                                <option>Anywhere</option>
+                                @foreach($getCountries as $country)
+                                <option value="{{$country->country_name}}">{{$country->country_name}}</option>
+                                    @endforeach
                             </select>
                         </div>
                     </div>
-                    <div class="search_row">
-                        <div class="search_column_1">
-                            <label>By Profile ID</label>
-                        </div>
-                        <div class="search_column_2">
-                            <input type="text" name="" value="" />
-                            <label class="check">With Photo</label>
-                            <input type="checkbox" name="" value="" class="checkbox"/>
-                        </div>
-                    </div>
+
                     <div class="search_row last">
                         <div class="search_column_1">&nbsp;</div>
                         <div class="search_column_2">

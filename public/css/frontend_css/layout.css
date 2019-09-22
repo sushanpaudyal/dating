@@ -1,18 +1,18 @@
-body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,form,fieldset,p{margin:0; padding:0; font:14px/22px "Tahoma";}
+body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,form,fieldset,p{margin:0; padding:0;}
 img,fieldset{border:none;}
-body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 url(../../images/frontend_images/body_bg.gif) repeat-x 0 0;}
+body{font:13px/18px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 url(/images/frontend_images/body_bg.gif) repeat-x 0 0;}
 .clear{clear:both;}
 *{margin:0; padding:0}
 
 
 
 #layout{width:924px; margin:0 auto; margin-top:30px}
-#layout .layout_inner{float:left;width:916px; background:#eac366 url(../../images/frontend_images/layout_bg.gif) repeat-x 0 0; border:3px solid #d49f4f; border-bottom:none}
+#layout .layout_inner{float:left;width:916px; background:#eac366 url(/images/frontend_images/layout_bg.gif) repeat-x 0 0; border:3px solid #d49f4f; border-bottom:none}
 
 #body_container{float:left; width:892px; padding:12px 12px 0 12px}
 
-#header{float:left; width:892px; height:336px;}
-#header.inner{background:url(../../images/frontend_images/header_bg_1.gif) no-repeat 0 0}
+#header{float:left; width:892px; height:336px; background:url(/images/frontend_images/header_bg.gif) no-repeat 0 0}
+#header.inner{background:url(/images/frontend_images/header_bg_1.gif) no-repeat 0 0}
 .logo{float:left; width:285px}
 .logo img{float:left; width:auto; padding:0 0 0 44px}
 #header p{float:left; width:597px; font:15px/17px "Adobe Garamond Pro", Arial, Helvetica, sans-serif; color:#534635; padding:5px 0 0 0; text-align:right}
@@ -27,7 +27,7 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 	height:30px;
 	font:bold 16px/20px Arial, Helvetica, sans-serif;
 	color:#fff;
-	background:url(../../images/frontend_images/menu_border.gif) no-repeat 0 0;
+	background:url(/images/frontend_images/menu_border.gif) no-repeat 0 0;
 	padding-top: 5px;
 	padding-right: 12px;
 	padding-bottom: 0;
@@ -37,7 +37,7 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 #menu li a:hover{color:#fff; text-decoration:underline;}
 #menu li a.current{color:#fff; text-decoration:none}
 #menu li.first{background:none; padding:5px 7px 0 14px}
-#menu li.last{background:none; background:url(../../images/frontend_images/menu_border.gif) no-repeat 0 2px; padding:5px 0 0 7px}
+#menu li.last{background:none; background:url(/images/frontend_images/menu_border.gif) no-repeat 0 2px; padding:5px 0 0 7px}
 
 
 
@@ -46,12 +46,12 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 
 #right_container .heading h1{float:left; width:111px; font:16px/18px "Futura Hv BT", Arial, Helvetica, sans-serif; color:#3b1f11; padding:16px 0 0 29px}
 #right_container .heading h2{float:right; width:443px; font:bold 18px/20px "Adobe Garamond Pro", Arial, Helvetica, sans-serif; color:#fcd35d; background:#e45950; border-left:2px solid #da3e37; border-bottom:2px solid #da3e37; padding:12px 0 9px 33px}
-#right_container .containt{float:left; width:618px; background:url(../../images/frontend_images/bg.gif) no-repeat 20px bottom; padding-bottom:27px}
+#right_container .containt{float:left; width:618px; background:url(/images/frontend_images/bg.gif) no-repeat 20px bottom; padding-bottom:27px}
 #right_container .containt h3{float:left; width:589px; font-size:11px; line-height:13px; font-weight:bold; color:#d94e45; padding:33px 0 12px 29px}
 #right_container .containt p{float:left; width:555px; color:#3b1f11; padding:0 0 23px 29px}
 #right_container .containt h4{float:left; width:589px; font:20px/22px "Adobe Caslon Pro", Arial, Helvetica, sans-serif; color:#a1553b; padding:0 0 4px 29px}
 #right_container .containt ul{float:left; width:588px; list-style:none; padding:0 0 0 30px}
-#right_container .containt li{float:left; width:588px; font-size:11px; line-height:13px; font-weight:bold; color:#009999; padding:8px 0 8px 0; list-style:none; background:url(../../images/frontend_images/li_border.gif) no-repeat 0 bottom}
+#right_container .containt li{float:left; width:588px; font-size:11px; line-height:13px; font-weight:bold; color:#009999; padding:8px 0 8px 0; list-style:none; background:url(/images/frontend_images/li_border.gif) no-repeat 0 bottom}
 #right_container .containt li.last{background:none; padding:8px 0 25px 0}
 #right_container .containt li img{float:none; width:auto; vertical-align:middle; padding:0 9px 0 9px}
 #right_container .containt li a{color:#d0493f; text-decoration:none}
@@ -59,10 +59,10 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 
 
 
-.recent_add_prifile{float:left; width:598px; background:url(../../images/frontend_images/profile_border.gif) no-repeat 20px bottom; padding:0 0 35px 20px}
+.recent_add_prifile{float:left; width:598px; background:url(/images/frontend_images/profile_border.gif) no-repeat 20px bottom; padding:0 0 35px 20px}
 .recent_add_prifile h4{float:left; width:569px; font:20px/22px "Adobe Caslon Pro", Arial, Helvetica, sans-serif; color:#a1553b; padding:0 0 4px 29px}
 .recent_add_prifile .profile_box{float:left; width:127px; padding:0 15px 0 0; position:relative }
-.recent_add_prifile .profile_box img.more_1{float:left; width:auto; position:absolute; left:42px; top:220px}
+.recent_add_prifile .profile_box img.more_1{float:left; width:auto; position:absolute; left:42px; top:240px}
 .recent_add_prifile .profile_box.first{float:left; width:127px; padding:0 15px 0 12px;}
 .recent_add_prifile .profile_box .photo{float:left; width:127px; padding:0 0 12px 0;}
 .recent_add_prifile .profile_box .photo img{float:left; width:auto; border:1px solid #d8c8a7; padding:0 0 0 0;}
@@ -84,22 +84,22 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 
 
 
-.member_advantages{float:left; width:309px; background:url(../../images/frontend_images/left_border.gif) no-repeat 0 25px}
+.member_advantages{float:left; width:309px; background:url(/images/frontend_images/left_border.gif) no-repeat 0 25px}
 .member_advantages h4{float:left; width:280px; font:20px/22px "Adobe Caslon Pro", Arial, Helvetica, sans-serif; color:#a1553b; padding:36px 0 20px 20px}
 
 .member_advantages ul{float:left; width:300px; list-style:none; padding:0 0 0 0}
-.member_advantages li{float:left; width:268px; color:#555555; background:url(../../images/frontend_images/bullet_1.gif) no-repeat 30px 3px; padding:0 0 7px 40px}
+.member_advantages li{float:left; width:268px; color:#555555; background:url(/images/frontend_images/bullet_1.gif) no-repeat 30px 3px; padding:0 0 7px 40px}
 .member_advantages li a{color:#555555; text-decoration:underline}
 .member_advantages li a:hover{color:#555555; text-decoration:none}
 
 
 
 .partner_search{float:left; width:274px}
-.partner_search h2{float:left; width:258px; height:51px; font:bold 18px/20px "Adobe Garamond Pro", Arial, Helvetica, sans-serif; color:#fcd35d; background:url(../../images/frontend_images/form_heading_bg.gif) no-repeat 0 0; padding:10px 0 0 16px}
+.partner_search h2{float:left; width:258px; height:51px; font:bold 18px/20px "Adobe Garamond Pro", Arial, Helvetica, sans-serif; color:#fcd35d; background:url(/images/frontend_images/form_heading_bg.gif) no-repeat 0 0; padding:10px 0 0 16px}
 .partner_search .form_container{float:left; width:270px; background:#d4a057; border-bottom:4px solid #c98c44; border-right:4px solid #ca8d46; padding:16px 0 0 0}
 .form_container .search_row{float:left; width:270px; padding-bottom:8px}
 .form_container .search_row.last{float:left; width:270px; padding:5px 0 0 0}
-.form_container .search_row .search_column_1{float:left; width:86px; padding:0 0 0 0}
+.form_container .search_row .search_column_1{float:left; width:86px; padding:0 0 0 0;}
 .form_container .search_row .search_column_2{float:left; width:184px}
 
 .form_container form{float:left; width:270px;}
@@ -111,26 +111,24 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 .form_container input.checkbox{float:left; width:auto; border:none; height:15px; padding:0; margin:2px 0 0 0}
 .form_container input.search_btn{float:left; width:auto; padding:0; margin:0 0 0 0}
 .form_container select{float:left; width:58px; height:19px; font-size:9px}
-.form_container select.gender{float:left; width:58px;}
-.form_container select.date{float:left; width:171px;}
+.form_container select.gender{float:left; width:82px; margin-top: 5px;}
+.form_container select.date{float:left; width: 82px;  margin-top: 5px;}
 .form_container select.dob{float:left; width:55px; font-size:10px; margin:0 3px 0 0}
 
 
 .dating_news{float:left; width:274px}
-.dating_news h2{float:left; width:255px; height:33px; font:bold 18px/20px "Adobe Garamond Pro", Arial, Helvetica, sans-serif; color:#fcd35d; background:url(../../images/frontend_images/dating_news_heading_bg.gif) no-repeat 0 0; padding:13px 0 0 19px}
+.dating_news h2{float:left; width:255px; height:33px; font:bold 18px/20px "Adobe Garamond Pro", Arial, Helvetica, sans-serif; color:#fcd35d; background:url(/images/frontend_images/dating_news_heading_bg.gif) no-repeat 0 0; padding:13px 0 0 19px}
 
-.dating_news .news_detail{float:left; width:274px; background:url(../../images/frontend_images/news_border.gif) no-repeat 14px bottom; padding:0 0 21px 0}
+.dating_news .news_detail{float:left; width:274px; background:url(/images/frontend_images/news_border.gif) no-repeat 14px bottom; padding:0 0 21px 0}
 .dating_news .news_detail p.date{float:left; width:244px; color:#3c3c3c; font-weight:bold; padding:20px 0 14px 29px}
 .dating_news .news_detail p.detail{float:left; width:225px; text-align:justify; color:#cc3433; padding:0 0 15px 26px}
 .dating_news .news_detail p.know_more{float:left; width:257px; text-align:right; color:#926d1b; font-weight:bold; padding:0 17px 0 0}
 .dating_news .news_detail p.know_more a{color:#926d1b; text-decoration:none}
 .dating_news .news_detail p.know_more a:hover{color:#926d1b; text-decoration:underline}
 
-
-.link_detail p.link{float:left; width:257px; text-align:left; color:#926d1b; font-weight:bold; padding:10px 17px 0 0; margin-top: -8px; margin-left: 10px; margin-bottom: 5px;}
+.link_detail p.link{float:left; width:257px; text-align:left; color:#926d1b; font-weight:bold; padding:10px 17px 10px 0; margin-left: 10px;}
 .link_detail p.link a{color:#926d1b; text-decoration:none}
 .link_detail p.link a:hover{color:#926d1b; text-decoration:underline}
-
 
 .dont_stay{float:left; width:274px; padding:0}
 .dont_stay img{float:left; width:auto; padding:0}
@@ -138,11 +136,11 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 
 
 
-#footer{float:left; width:922px; height:79px; background:url(../../images/frontend_images/footer_bg.gif) no-repeat 0 0;}
+#footer{float:left; width:922px; height:79px; background:url(/images/frontend_images/footer_bg.gif) no-repeat 0 0;}
 
 #footer .footer_link ul{float:left; width:642px; text-align:center; list-style:none; margin:0; padding:30px 0 0 280px}
 #footer .footer_link li{width:auto;	font:bold 11px/13px Georgia, "Times New Roman", Times, serif; color:#b28150;
-	background:url(../../images/frontend_images/footer_menu_border.gif) no-repeat 0 2px; padding:8px 6px 10px 10px; display: inline;}
+	background:url(/images/frontend_images/footer_menu_border.gif) no-repeat 0 2px; padding:8px 6px 10px 10px; display: inline;}
 #footer .footer_link li.first{background:none; padding:8px 6px 0 24px}
 #footer .footer_link li a{color:#b28150; text-decoration:none}
 #footer .footer_link li a:hover{color:#b28150; text-decoration:underline}
@@ -154,7 +152,7 @@ body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 u
 
 /***** inner page css starts *****/
 
-#body_container_inner{float:left; width:944px; background: url(../../images/frontend_images/body_container_bg.gif) repeat-y 0 0; padding:20px 0 20px 0}
+#body_container_inner{float:left; width:944px; background: url(/images/frontend_images/body_container_bg.gif) repeat-y 0 0; padding:20px 0 20px 0}
 #left_container_inner{float:left; width:200px; padding:0 0 0 0}
 #right_container_inner{float:left; width:700px; padding:20px 0 20px 0}
 
@@ -200,11 +198,10 @@ input.button:hover{cursor:pointer; color:#cccccc;}
 .blog-posted-row a{color:#5D2D23; font-size:14px; text-decoration:underline; padding:0 0 0 8px}
 .blog-posted-row a:hover{text-decoration:none}
 
-
-.error{color: #722622; margin-left: 3px}
-
+.error{ color:#870000; margin-left:3px; }
 
 
+/* CSS for jQuery Password Checker */
 #signupForm {
 	margin:10px;
 }
@@ -222,6 +219,8 @@ input {
 	font-size:10px;
 	font-weight:bold;
 }
+
+
 
 
 

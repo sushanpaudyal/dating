@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f192b34-9605-4b6b-8341-121afe18486a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_login.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/admin_login.blade.php" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/public/css/frontend_css/layout.css" afterPath="$PROJECT_DIR$/public/css/frontend_css/layout.css" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,45 +18,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
+      <file leaf-file-name="front_sidebar.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="17" column="136" lean-forward="false" selection-start-line="17" selection-start-column="136" selection-end-line="17" selection-end-column="136" />
+            <state relative-caret-position="332">
+              <caret line="118" column="47" lean-forward="true" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
               <folding>
-                <element signature="e#40#54#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="63" column="55" lean-forward="false" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Adminlogin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Adminlogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-              <folding>
-                <element signature="e#39#51#0#PHP" expanded="true" />
+                <marker date="1569174708108" expanded="true" signature="243:263" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="382:417" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="592:624" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="741:762" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="2232:2254" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="2699:2713" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="2719:2735" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="2791:2808" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="2882:2896" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="3038:3058" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="4365:4369" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="4365:4374" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="4385:4389" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="4800:4809" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="4817:4834" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="4851:4949" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="4857:4866" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="5318:5356" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="5526:5551" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="5602:5624" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="5630:5647" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="5630:5652" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="6034:6080" ph="..." />
+                <marker date="1569174708108" expanded="true" signature="7702:7753" ph="..." />
               </folding>
             </state>
           </provider>
@@ -76,6 +66,7 @@
     <findStrings>
       <find>#header h1</find>
       <find>js/jquery.min.js</find>
+      <find>gender</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,12 +104,10 @@
         <option value="$PROJECT_DIR$/resources/views/users/register.blade.php" />
         <option value="$PROJECT_DIR$/public/js/frontend_js/main.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_16_164724_add_columns_to_users_details.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/users/step3.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/frontend_css/layout.css" />
         <option value="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_design.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/users/profile.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_22_171252_create_admins_table.php" />
@@ -127,6 +116,8 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/Adminlogin.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/public/css/frontend_css/layout.css" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php" />
       </list>
     </option>
   </component>
@@ -313,7 +304,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Kerne&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Kernel.php&#10;AdminL&#9;null&#9;null&#10;web&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/routes/web.php&#10;admin_log&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/admin_login.blade.php&#10;Admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/AdminController.php&#10;admins&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/database/migrations/2019_09_22_171252_create_admins_table.php&#10;pr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/profile.blade.php&#10;front_de&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_design.blade.php&#10;profi&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/profile.blade.php&#10;layou&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/css/frontend_css/layout.css&#10;ste&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step3.blade.php&#10;us&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;step3&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step3.blade.php&#10;Inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/IndexController.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;ind&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;fron&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;front_so&#9;null&#9;null&#10;reg&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;userC&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;Index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/IndexController.php&#10;frontL&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/Frontlogin.php&#10;User&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;side&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;matr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/backend_js/matrix.form_validation.js&#10;view&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/users/view_users.blade.php&#10;User.php&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/User.php&#10;step&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step3.blade.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;use&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;admin_&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/settings.blade.php&#10;UserC&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;compo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/composer.json&#10;sideb&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;step2&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;users_ph&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/database/migrations/2019_09_20_171948_create_users_photos_table.php&#10;USer&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;Front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/Frontlogin.php&#10;front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;User.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/User.php&#10;admin_de&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_header.blade.php&#10;veri&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/VerifyCsrfToken.php&#10;csrf&#9;null&#9;null&#10;cs&#9;null&#9;null&#10;Veri&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="front_s&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;lay&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/css/frontend_css/layout.css&#10;web&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/routes/web.php&#10;Kerne&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Kernel.php&#10;AdminL&#9;null&#9;null&#10;admin_log&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/admin_login.blade.php&#10;Admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/AdminController.php&#10;admins&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/database/migrations/2019_09_22_171252_create_admins_table.php&#10;pr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/profile.blade.php&#10;front_de&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_design.blade.php&#10;profi&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/profile.blade.php&#10;layou&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/css/frontend_css/layout.css&#10;ste&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step3.blade.php&#10;us&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;step3&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step3.blade.php&#10;Inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/IndexController.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;ind&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/index.blade.php&#10;fron&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;front_so&#9;null&#9;null&#10;reg&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/register.blade.php&#10;userC&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;Index&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/IndexController.php&#10;frontL&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/Frontlogin.php&#10;User&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;side&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/frontend_js/main.js&#10;matr&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/public/js/backend_js/matrix.form_validation.js&#10;view&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/users/view_users.blade.php&#10;User.php&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/User.php&#10;step&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step3.blade.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;use&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;admin_&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/admin/settings.blade.php&#10;UserC&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;compo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/composer.json&#10;sideb&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;step2&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/users/step2.blade.php&#10;users_ph&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/database/migrations/2019_09_20_171948_create_users_photos_table.php&#10;USer&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Controllers/UserController.php&#10;Front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/Frontlogin.php&#10;front&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/frontLayout/front_sidebar.blade.php&#10;User.&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/User.php&#10;admin_de&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_design.blade.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/resources/views/layouts/adminLayout/admin_header.blade.php&#10;veri&#9;FILE&#9;file:///Applications/MAMP/htdocs/Study/dating/app/Http/Middleware/VerifyCsrfToken.php&#10;csrf&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -363,12 +354,12 @@
       <workItem from="1569081005463" duration="5815000" />
       <workItem from="1569140738134" duration="1170000" />
       <workItem from="1569142064170" duration="2103000" />
-      <workItem from="1569166573504" duration="3883000" />
+      <workItem from="1569166573504" duration="4708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56871000" />
+    <option name="totallyTimeSpent" value="57696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -653,27 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <marker date="1569166638786" expanded="true" signature="243:263" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="382:417" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="592:624" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="741:762" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="2238:2260" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="2705:2719" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="2725:2741" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="2797:2814" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="2888:2902" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="3044:3064" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="5903:5949" ph="..." />
-            <marker date="1569166638786" expanded="true" signature="7571:7622" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -741,14 +711,6 @@
             <marker date="1569169907613" expanded="true" signature="3169:3204" ph="..." />
             <marker date="1569169907613" expanded="true" signature="3264:3284" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/frontend_css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,16 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="17" column="136" lean-forward="false" selection-start-line="17" selection-start-column="136" selection-end-line="17" selection-end-column="136" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
@@ -851,29 +803,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Adminlogin.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="96">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="27" selection-end-column="5" />
           <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
+            <element signature="e#40#54#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
-          <caret line="63" column="55" lean-forward="false" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Adminlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#39#51#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/frontend_css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4318">
+          <caret line="254" column="0" lean-forward="true" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontLayout/front_sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="118" column="47" lean-forward="true" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+          <folding>
+            <marker date="1569174708108" expanded="true" signature="243:263" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="382:417" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="592:624" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="741:762" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="2232:2254" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="2699:2713" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="2719:2735" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="2791:2808" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="2882:2896" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="3038:3058" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="4365:4369" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="4365:4374" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="4385:4389" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="4800:4809" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="4817:4834" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="4851:4949" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="4857:4866" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="5318:5356" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="5526:5551" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="5602:5624" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="5630:5647" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="5630:5652" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="6034:6080" ph="..." />
+            <marker date="1569174708108" expanded="true" signature="7702:7753" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
