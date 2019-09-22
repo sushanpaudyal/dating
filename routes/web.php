@@ -39,6 +39,8 @@ Route::group(['middleware' => ['frontLogin']], function () {
     Route::get('/default-photo/{photo}','UserController@defaultPhoto');
 });
 
+Route::any('/profile/search', 'UserController@searchProfile');
+
 
 Route::match(['get', 'post'], '/admin', 'AdminController@login')->name('login');
 

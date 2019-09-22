@@ -242,4 +242,20 @@ class UserController extends Controller
         UsersPhoto::where(['user_id'=>$user_id,'photo'=>$photo])->update(['default_photo'=>'Yes']);
         return redirect()->back()->with('flash_message_success','Default Photo has been set Successfully!');
     }
+
+    public function searchProfile(Request $request){
+        if($request->isMethod('post')){
+            $data = $request->all();
+            if(empty($data['country'])){
+                $data['country'] = "";
+            }
+            $searched_users = User::with('details')->with('photos')
+            ->join('users_details', 'users_details.user_id', '=', 'users.id')
+                ->where('users_details.gender', $data['gender'])
+                ->where('users_details.country', $data['country'])
+                ->orderBy('users.id', 'DESC')->get();
+
+            return view ('users.search', compact('searched_users'));
+        }
+    }
 }

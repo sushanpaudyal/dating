@@ -86,16 +86,17 @@ if($datingCount == 1){
     <div class="partner_search">
         <h2>partner search</h2>
         <div class="form_container">
-            <form action="#" method="get">
+            <form action="{{url('profile/search')}}" method="post">
+                @csrf
                 <fieldset>
                     <div class="search_row">
                         <div class="search_column_1">
                             <label>Looking for</label>
                         </div>
                         <div class="search_column_2">
-                            <select class="gender">
-                                <option>Male</option>
-                                <option value="">Female</option>
+                            <select class="gender" name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
                             </select>
                         </div>
                     </div>
@@ -104,7 +105,7 @@ if($datingCount == 1){
                             <label>of Age</label>
                         </div>
                         <div class="search_column_2">
-                            <select class="date">
+                            <select class="date" name="minAge">
                                 <?php
                                     $minCount = 16;
                                     while ($minCount <= 99){
@@ -114,7 +115,7 @@ if($datingCount == 1){
                                 <?php $minCount = $minCount + 1; } ?>
                             </select>
 
-                            <select class="date">
+                            <select class="date" name="maxAge">
                                 <?php
                                 $maxCount = 16;
                                 while ($maxCount <= 99){
@@ -131,7 +132,7 @@ if($datingCount == 1){
                         </div>
                         <div class="search_column_2">
                             <?php $getCountries = \App\Country::get(); ?>
-                            <select class="gender" name="location">
+                            <select class="gender" name="country">
                                 <option>Anywhere</option>
                                 @foreach($getCountries as $country)
                                 <option value="{{$country->country_name}}">{{$country->country_name}}</option>
