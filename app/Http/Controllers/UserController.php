@@ -228,4 +228,9 @@ class UserController extends Controller
         $data = $request->all();
         UsersPhoto::where('id', $data['photo_id'])->update(['status' => $data['status']]);
     }
+
+    public function viewProfile($username){
+        $userDetails = User::with('details')->with('photos')->where('username', $username)->first();
+        return view ('users.profile', compact('userDetails'));
+    }
 }

@@ -19,6 +19,8 @@ Route::any('/check-email', 'UserController@checkEmail');
 
 Route::any('/check-username', 'UserController@checkUsername');
 
+Route::get('/profile/{username}', 'UserController@viewProfile')->name('viewProfile');
+
 
 Route::any('/user_login', 'UserController@login')->name('user_login');
 
