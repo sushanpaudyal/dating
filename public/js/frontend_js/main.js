@@ -5,6 +5,10 @@ $().ready(function() {
     // validate signup form on keyup and submit
     $("#signupForm").validate({
         rules: {
+            username: {
+                required: true,
+                remote: "/check-username"
+            },
             name: {
                 required: true,
                 minlength: 2,
@@ -49,6 +53,10 @@ $().ready(function() {
                 required: "Please provide a password",
                 minlength: "Your password must be at least 5 characters long",
                 // equalTo: "Please enter the same password as above"
+            },
+            username:{
+              required: "Please enter username",
+                remote: "Username Already Exists"
             },
             agree: "Please accept our policy",
         }

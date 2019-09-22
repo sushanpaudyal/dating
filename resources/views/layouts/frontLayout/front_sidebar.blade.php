@@ -29,7 +29,7 @@ if($datingCount == 1){
                             <label>username</label>
                         </div>
                         <div class="search_column_2">
-                            <input type="email" id="email" name="email" placeholder="username">
+                            <input type="text" id="username" name="username" placeholder="username">
                         </div>
                     </div>
                     <div class="search_row">

@@ -14,6 +14,10 @@
                     @csrf
                     <table width="80%">
                         <tr>
+                            <td align="left" valign="top" class="body" ><strong> Username:</strong></td>
+                            <td align="left" valign="top"><input name="username" id="username" type="text" size="22" /></td>
+                        </tr>
+                        <tr>
                             <td align="left" valign="top" class="body" ><strong> Name:</strong></td>
                             <td align="left" valign="top"><input name="name" id="name" type="text" size="22" /></td>
                         </tr>

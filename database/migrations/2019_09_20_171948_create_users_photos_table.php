@@ -16,6 +16,7 @@ class CreateUsersPhotosTable extends Migration
         Schema::create('users_photos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
+            $table->string('username');
             $table->string('photo');
             $table->string('default_photo');
             $table->boolean('status');

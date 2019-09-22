@@ -27,6 +27,7 @@ class UserController extends Controller
 
             $user = new User;
             $user->name = $data['name'];
+            $user->username = $data['username'];
             $user->email = $data['email'];
             $user->password = bcrypt($data['password']);
             $user->admin = 0;
@@ -50,11 +51,21 @@ class UserController extends Controller
         }
     }
 
+    public function checkUsername(Request $request){
+        $data = $request->all();
+        $userCount = User::where('username', $data['username'])->count();
+        if($userCount > 0){
+            echo 'false';
+        } else {
+            echo 'true';
+        }
+    }
+
     public function login(Request $request){
         if($request->isMethod('post')){
             $data = $request->all();
-            if(Auth::attempt(['email' => $data['email'], 'password' => $data['password'], 'admin' => '0'])){
-                Session::put('frontSession', $data['email']);
+            if(Auth::attempt(['username' => $data['username'], 'password' => $data['password'], 'admin' => '0'])){
+                Session::put('frontSession', $data['username']);
                 return redirect('/step/2');
             } else {
                 return redirect()->back()->with('flash_message_error', 'Invalid username or password');
@@ -82,6 +93,7 @@ class UserController extends Controller
             }
 
 
+            $userDetail->username = Session::get('frontSession');
 
             $userDetail->dob = $data['dob'];
             $userDetail->gender = $data['gender'];
@@ -160,6 +172,7 @@ class UserController extends Controller
                     $photo = new UsersPhoto;
                     $photo->photo = $fileName;
                     $photo->user_id = $data['user_id'];
+                    $photo->username = Session::get('frontSession');
                     $photo->default_photo = "No";
                     $photo->status = 0;
                     $photo->save();

@@ -17,6 +17,9 @@ Route::any('/register', 'UserController@register')->name('user_register');
 
 Route::any('/check-email', 'UserController@checkEmail');
 
+Route::any('/check-username', 'UserController@checkUsername');
+
+
 Route::any('/user_login', 'UserController@login')->name('user_login');
 
 
