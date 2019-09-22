@@ -29,7 +29,7 @@ if($datingCount == 1){
                             <label>username</label>
                         </div>
                         <div class="search_column_2">
-                            <input type="text" id="username" name="username" placeholder="username">
+                            <input type="text" id="username" name="username" placeholder="username" required>
                         </div>
                     </div>
                     <div class="search_row">
@@ -37,7 +37,7 @@ if($datingCount == 1){
                             <label>password</label>
                         </div>
                         <div class="search_column_2">
-                            <input type="password" id="password" name="password" placeholder="password" >
+                            <input type="password" id="password" name="password" placeholder="password" required>
                         </div>
                     </div>
 

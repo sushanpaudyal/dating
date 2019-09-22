@@ -23,8 +23,8 @@ class AddColumnsToUsersDetails extends Migration
             $table->string('education')->after('hobbies');
             $table->string('occupation')->after('education');
             $table->string('income')->after('occupation');
-            $table->string('about_myself')->after('income');
-            $table->string('about_partner')->after('about_myself');
+            $table->longText('about_myself')->after('income');
+            $table->longText('about_partner')->after('about_myself');
             $table->boolean('status')->after('about_partner')->default(0);
 
         });
