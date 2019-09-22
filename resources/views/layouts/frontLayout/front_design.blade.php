@@ -26,7 +26,8 @@
         <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="{{asset('js/frontend_js/main.js')}}"></script>
 
-
+    <script type="text/javascript"
+            src="https://slideshow.triptracker.net/slide.js"></script>
 
     <script>
         $(function() {

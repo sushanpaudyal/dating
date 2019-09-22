@@ -1,4 +1,4 @@
-body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,form,fieldset,p{margin:0; padding:0;}
+body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,form,fieldset,p{margin:0; padding:0; font:14px/22px "Tahoma";}
 img,fieldset{border:none;}
 body{font:10px/12px "Tahoma", Arial, Helvetica, sans-serif; background:#722622 url(../../images/frontend_images/body_bg.gif) repeat-x 0 0;}
 .clear{clear:both;}
