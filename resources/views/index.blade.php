@@ -29,8 +29,10 @@
                         <?php $user_photo = $user->photos[0]->photo; ?>
                     @endif
                 @endforeach
-                @if(!empty($user_photo))
-                <span class="photo"><a href="{{route('viewProfile', $user->username)}}"><img src="{{asset('images/frontend_images/photos/'.$user_photo)}}" alt="" /></a></span>
+                    @if(!empty($user_photo))
+                        <span class="photo"><a href="{{ url('profile/'.$user->username) }}"><img src="{{ asset('images/frontend_images/photos/'.$user_photo) }}" alt="" /></a></span>
+                    @else
+                        <span class="photo"><a href="{{ url('profile/'.$user->username) }}"><img src="{{ asset('images/frontend_images/photos/download.png') }}" alt="" /></a></span>
                     @endif
                 <p class="left">Name:</p>
                 <p class="right">{{$user->name}}</p>

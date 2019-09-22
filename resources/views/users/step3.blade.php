@@ -70,7 +70,18 @@
                         @endif
                 </p>
                 <p>
-                    <a rel="{{$user_photo->photo}}" rel1="delete-photo" href="javascript:" class="btn btn-danger btn-sm deleteRecord">Delete</a>
+                    <table cellspacing="2" cellpadding="2">
+                    <tr>
+                        <td>
+                            <a rel="{{$user_photo->photo}}" rel1="delete-photo" href="javascript:" class="btn btn-danger btn-sm deleteRecord">Delete</a>
+                        </td>
+                        <td>
+                            @if($user_photo->default_photo != "Yes")
+                                <a href="/default-photo/{{ $user_photo->photo }}"><button type="button" class="btn btn-danger">Default</button></a>
+                            @endif
+                        </td>
+                    </tr>
+                </table>
                 </p>
                 <p>&nbsp;</p>
 

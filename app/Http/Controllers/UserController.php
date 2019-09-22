@@ -233,4 +233,13 @@ class UserController extends Controller
         $userDetails = User::with('details')->with('photos')->where('username', $username)->first();
         return view ('users.profile', compact('userDetails'));
     }
+
+    public function defaultPhoto($photo){
+        $user_id = Auth::User()->id;
+        // Set all photos as Non default
+        UsersPhoto::where('user_id',$user_id)->update(['default_photo'=>'No']);
+        // Make selected Photo default
+        UsersPhoto::where(['user_id'=>$user_id,'photo'=>$photo])->update(['default_photo'=>'Yes']);
+        return redirect()->back()->with('flash_message_success','Default Photo has been set Successfully!');
+    }
 }

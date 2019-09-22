@@ -35,6 +35,8 @@ Route::group(['middleware' => ['frontLogin']], function () {
     Route::any('/step/3','UserController@step3')->name('step3');
 
     Route::get('/delete-photo/{photo}', 'UserController@deletePhoto')->name('deletePhoto');
+
+    Route::get('/default-photo/{photo}','UserController@defaultPhoto');
 });
 
 

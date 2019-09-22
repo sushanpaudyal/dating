@@ -62,7 +62,7 @@
                                         @if(!empty($user_photo))
                                             <img src="{{ asset('images/frontend_images/photos/'.$user_photo) }}" alt="" width="210" class="aboutus-img" />
                                         @else
-                                            <img src="{{ asset('images/frontend_images/photos/default.jpg') }}" alt="" width="210" class="aboutus-img" />
+                                            <img src="{{ asset('images/frontend_images/photos/download.png') }}" alt="" width="210" class="aboutus-img" />
                                         @endif
                                         <strong>Profile ID:</strong> {{ $userDetails->username }}<br>
                                         <strong>Name:</strong> {{ $userDetails->name }}<br>
